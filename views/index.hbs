@@ -1,0 +1,31 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>LOGIN PAGE</title>
+<style>
+h2{
+	color:red;
+}
+label{
+	color:blue;
+}
+</style>
+</head>
+<body>
+  {{msg}}
+  <form action="loginCheck" method="post">
+<h2>LOGIN</h2>
+<table>
+<div class="form-group">
+ <label for="usr">User ID:</label><input type="text" class="form-control" name="user" id="usr" placeholder="Enter User Id Here"/>
+</div>
+<div class="form-group">
+ <label for="pwd">Password:</label><input type="password" class="form-control" name="pass" id="pwd" placeholder="Enter Password Here"/><div>
+ </table>
+<div class="form-group">
+<input type="submit" value="login" style="color:white;background-color:black;"/>
+</div>
+<a href="registration.html" style="color:red;">New User Registration</a>
+</form>
+</body>
+</html>
